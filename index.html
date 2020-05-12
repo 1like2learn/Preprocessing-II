@@ -84,20 +84,25 @@
       <form action="/new-bookings-page" method="post">
         <ul>
           <li>
+            <select id="package" name="package">
+              <option value="Fun in the Sun">Fun in the Sun</option>
+            </select>
+          </li>
+          <li>
             <label for="name">Name:</label>
-            <input type="text" id="name" name:="name">
+            <input type="text" id="name" name="name">
           </li>
           <li>
             <label for="email">Email:</label>
-            <input type="mail" id="email" name:="email">
+            <input type="mail" id="email" name="email">
           </li>
           <li>
             <label for="phone-number">Phone Number: </label>
-            <input type="tel" id="phone" name:="phone">
+            <input type="tel" id="phone" name="phone">
           </li>
           <li>
             <label for="comments">Comments:</label>
-            <textarea id="comment" name:="name"></textarea>
+            <textarea id="comment" name="name"></textarea>
           </li>
           <li>
             <button type="submit">Submit</button>
