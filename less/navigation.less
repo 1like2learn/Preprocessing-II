@@ -1,28 +1,36 @@
 // Navigation Styles here
-section.nav-bar{
-    .flex-cont(space-between, center);
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    h1{
-        padding: 2% 0;
-    }//h1
-    nav{
-        width:40%;
-        .flex-cont(space-around, center);
-        align-items: center;
-        a{
-            text-decoration: none;
-            font-size: 1.6rem;
-            &:link{
-                color:black;
-            }//&:link
-            &:visited{
-                color: black;
-            }//&:visited
-        }//a
-    }//nav
+section.nav-bar{ 
+    border-bottom: 2px dashed @navigation-border;
+    div{
+        .flex-cont(space-between, center);
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        @media(@mobile){
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            padding: 2% 0;
+        }//h1
+        nav{
+            width:40%;
+            .flex-cont(space-around, center);
+            align-items: center;
+            @media(@mobile){
+                width:100%;
+                padding-bottom: 2%;
+            }
+            a{
+                text-decoration: none;
+                font-size: 1.6rem;
+                &:link{
+                    color:black;
+                }//&:link
+                &:visited{
+                    color: black;
+                }//&:visited
+            }//a
+        }//nav
+    }//div
 }//section.nav-bar
-br.nav-bottom{
-    border-bottom:1px grey dotted ;
-}
