@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  border: 1px solid grey;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -320,6 +321,45 @@ section.nav-bar div nav a:visited {
   }
 }
 .home .content-pick .destination div.btn {
+  background-color: #20B2AA;
+  font-size: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5%;
+  color: white;
+}
+.home section.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home section.book h2 {
+  padding-top: 2%;
+}
+.home section.book form ul {
+  list-style: none;
+}
+.home section.book form ul li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+.home section.book form ul li label {
+  padding: 2%;
+  width: 70%;
+}
+.home section.book form ul li input {
+  padding: 2%;
+  width: 100%;
+}
+.home section.book form ul li textarea {
+  padding: 2%;
+  width: 100%;
+}
+.home section.book form ul li button {
+  margin: 3%;
   background-color: #20B2AA;
   font-size: 2rem;
   border-radius: 10px;
