@@ -273,6 +273,7 @@ section.nav-bar div nav a:visited {
   .home .inverse-content {
     flex-direction: column-reverse;
     padding: 0 5%;
+    align-items: center;
   }
 }
 .home .inverse-content .text-content {
