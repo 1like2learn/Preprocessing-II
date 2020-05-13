@@ -223,6 +223,7 @@ section.nav-bar div nav a:visited {
   padding: 20px;
 }
 .home header {
+  padding-bottom: 4%;
   border-bottom: 2px dashed #C0C0C0;
 }
 .home header h2 {
