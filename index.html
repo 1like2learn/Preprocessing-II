@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
@@ -15,11 +15,27 @@
 </head>
 
 <body>
-
-  
-     
+  <section class="nav-bar">
+    <div>
+      <h1>Fun Bus</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </section>
   <div class="container home">
-   
+    <header>
+      <img src="img\fun-bus.jpg">
+      <h2>Welcome To Fun Bus!</h2>
+      <p>Traveling expedtition modern, clean webdesign blogger clean webiste blogger clean 
+        website theme website modern. Design pretty design, travelblogger adventure WordPress
+        wanderlust theme blogger website expedition theme travelblogger. Adventure fun 
+        traveler pretty design website expedition.
+      </p>
+    </header>
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -47,7 +63,6 @@
       <img src="img/destination.jpg" alt="Second slide">
     </section>
     <section class="content-pick">
-
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -63,6 +78,39 @@
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <div class="btn">Sign Me Up!</div>
       </div>
+    </section>
+    <section class="book">
+      <h2>Book Your Trip Today!</h2>
+      <form action="/new-bookings-page" method="post">
+        <ul>
+          <li>
+            <select id="package" name="package">
+              <option value="Fun in the Sun">Fun in the Sun</option>
+              <option value="Mountain Excursion">Mountain Excursion</option>
+              <option value="Island Getaway">Island Getaway</option>
+            </select>
+          </li>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="mail" id="email" name="email">
+          </li>
+          <li>
+            <label for="phone-number">Phone Number: </label>
+            <input type="tel" id="phone" name="phone">
+          </li>
+          <li>
+            <label for="comments">Comments:</label>
+            <textarea id="comment" name="name"></textarea>
+          </li>
+          <li>
+            <button type="submit">Submit</button>
+          </li>
+          </ul>
+      </form>
     </section>
   </div><!-- container -->
 

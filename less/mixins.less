@@ -1,1 +1,17 @@
 // Mixins in here
+.flex-cont(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-content: @align;
+}
+.bot-border(){
+    border-bottom: 2px dashed @navigation-border;
+}
+.sign-button(@btn-color, @fnt-color){
+    background-color:@btn-color;
+        font-size: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        padding: 5%;
+        color:@fnt-color;
+}
